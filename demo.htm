@@ -21,6 +21,7 @@
 
 		setInterval(function(){
 			one.paint("2d", function(ctx){
+				ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
 				ctx.fillText(Date.parse(new Date()), 10, 30);
 			});
 		}, 1000);
