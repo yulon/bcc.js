@@ -28,30 +28,5 @@ HTMLElement.prototype.getBackgroundCanvasContext = function(ctxType){
 		ele.style.backgroundImage = getImg();
 	};
 
-	/*for (var attr in ctx) {
-		if (ctx[attr].constructor == Function) {
-			console.log(attr);
-			var old = ctx[attr];
-
-			ctx[attr] = function(){
-				if (this.canvas.width != ele.offsetWidth) {
-					this.canvas.width = ele.offsetWidth;
-				};
-				if (this.canvas.height != ele.offsetHeight) {
-					this.canvas.height = ele.offsetHeight;
-				};
-				
-				var arg = new Array(old.length);
-
-				for (var i = 0; i < arguments.length; i++) {
-					arg[i] = arguments[i];
-				};
-
-				old.apply(this, arg);
-				this.update();
-			};
-		};
-	};*/
-
 	return ctx;
 };
